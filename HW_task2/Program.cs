@@ -1,9 +1,12 @@
-﻿Console.Write("Введи число: ");
-int Num = Convert.ToInt32(Console.ReadLine());
-string NumText = Convert.ToString(Num);
-if (Num > 99){
-  Console.WriteLine("третья цифра -> " + NumText[2]);
+﻿Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num>99){
+  while(num>1000){
+    num /=10;
+  }
+  int result = num%10;
+  System.Console.WriteLine(result);
 }
-else {
-  Console.WriteLine("-> третьей цифры нет");
-}
+else{
+  System.Console.WriteLine("третей цифры нет");
+  }
